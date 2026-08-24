@@ -1,0 +1,204 @@
+/* --- Body Background & Layout --- */
+body {
+    background-color: #06080d;
+    color: #b3c1c8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* --- Main Container --- */
+.policy-container {
+    width: 100%;
+    max-width: 850px;
+    background: rgba(11, 15, 25, 0.7);
+    border: 1px solid rgba(0, 160, 255, 0.1);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+}
+
+/* --- Navigation Bar --- */
+nav {
+    width: 100%;
+    max-width: 850px;
+    padding: 0.8rem 1.5rem;
+    background-color: rgba(15, 23, 42, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    backdrop-filter: blur(15px);
+    margin-bottom: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}  
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    color: #00a0ff;
+    text-decoration: none;
+    letter-spacing: 2px;
+}  
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    position: relative;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #b3c1c8;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover, 
+.nav-links li a.active {
+    color: #38bdf8;
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+}
+
+/* --- Logo Styling (Standalone) --- */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.logo-container img {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0px 4px 15px rgba(0, 150, 255, 0.4));
+}
+
+/* --- Navigation Buttons (Legacy Support) --- */
+.policy-nav {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+}
+
+.policy-nav a, .policy-btn, .nav-btn {
+    background-color: rgba(15, 30, 50, 0.9);
+    color: #ffffff !important;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid rgba(0, 160, 255, 0.3);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.policy-nav a:hover, .policy-btn:hover, .nav-btn:hover, .nav-btn.active {
+    background-color: rgba(0, 150, 255, 0.2);
+    border-color: #00a0ff;
+    box-shadow: 0 0 15px rgba(0, 160, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+/* --- Headers & Typography --- */
+.policy-header h1 {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.update-date {
+    color: #5c6b78;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.intro-text {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #a0b2c6;
+    border-left: 3px solid #00a0ff;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+/* --- Policy Content & Cards --- */
+.policy-content {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.policy-content h3 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 12px 18px;
+    background: rgba(0, 150, 255, 0.05);
+    border-left: 4px solid #00a0ff;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Glowing dot before heading */
+.policy-content h3::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #00a0ff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00a0ff;
+}
+
+.policy-content p {
+    color: #a0b2c6;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+/* --- Text Selection Color --- */
+::selection {
+    background-color: #00a0ff;
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background-color: #00a0ff;
+    color: #ffffff;
+}
+
+/* --- Top Right Discord Button Style --- */
+.top-discord-container {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
